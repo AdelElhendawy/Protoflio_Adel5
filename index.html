@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffffff">
+    <title>Portfolio Adel</title>
+
+    <link rel="icon" href="img/protfolio_img.jpeg">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">Adel<span>.Portfolio</span></a>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About me</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Communication</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button
+                    id="themeToggle"
+                    class="theme-toggle"
+                    type="button"
+                    aria-label="Switch to dark mode"
+                    aria-pressed="false"
+                    title="Change theme"
+                >
+                    <i class="fas fa-moon" aria-hidden="true"></i>
+                </button>
+
+                <button
+                    class="hamburger"
+                    id="hamburger"
+                    type="button"
+                    aria-label="Open navigation menu"
+                    aria-controls="navMenu"
+                    aria-expanded="false"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <p class="hero-greeting">👋 Welcome, I'm</p>
+                    <h1 class="hero-name">Adel ELhendawy</h1>
+                    <h2 class="hero-title">
+                        <span class="typed-text" id="typedText"></span>
+                        <span class="cursor" aria-hidden="true">|</span>
+                    </h2>
+                    <p class="hero-desc">
+                        A passionate web developer dedicated to crafting exceptional digital experiences, specializing in modern user interface development and full-stack web applications 👍🏻
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">See my work</a>
+                        <a href="#contact" class="btn btn-outline">Contact me</a>
+                    </div>
+
+                    <div class="social-icons">
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <div class="image-wrapper">
+                        <img src="./img/protfolio_img.jpeg" alt="Adel">
+                        <div class="blob"></div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#about" class="scroll-down" aria-label="Scroll to About section">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </section>
+
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Who am I?</span>
+                    <h2 class="section-title">About me</h2>
+                </div>
+
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Professional web developer with 3 years of experience</h3>
+                        <p>
+                            I'm a web developer specializing in building modern, responsive web applications. I transform ideas into exceptional digital experiences using cutting-edge technologies like React, Node.js, and various databases.
+                        </p>
+                        <p>
+                            My goal is to create digital products that leave a positive impact on users, with a focus on high performance and a seamless user experience.
+                        </p>
+
+                        <div class="about-stats">
+                            <div class="stat">
+                                <h4>50+</h4>
+                                <p>Completed projects</p>
+                            </div>
+                            <div class="stat">
+                                <h4>30+</h4>
+                                <p>Happy customers</p>
+                            </div>
+                            <div class="stat">
+                                <h4>3+</h4>
+                                <p>Years of experience</p>
+                            </div>
+                        </div>
+
+                        <a href="#" class="btn btn-primary">Show My CV</a>
+                    </div>
+
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600" alt="Web development workspace" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills section" id="skills">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">My skills</span>
+                    <h2 class="section-title">Skills and technologies</h2>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="fab fa-html5" style="color: #e34c26"></i>
+                        <h3>HTML &amp; HTML5</h3>
+                        <p>Modern semantic page structure</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-css3-alt" style="color: #264de4"></i>
+                        <h3>CSS &amp; CSS3</h3>
+                        <p>Modern, responsive interface design</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-js" style="color: #f7df1e"></i>
+                        <h3>JavaScript</h3>
+                        <p>Interactive programming and application logic</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-react" style="color: #61dafb"></i>
+                        <h3>React.js</h3>
+                        <p>Building dynamic user interfaces</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-node-js" style="color: #68a063"></i>
+                        <h3>Node.js</h3>
+                        <p>Developing back-end software interfaces</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-git-alt" style="color: #f1502f"></i>
+                        <h3>Git &amp; GitHub</h3>
+                        <p>Version control and collaboration</p>
+                    </div>
+                </div>
+
+                <div class="progress-bars">
+                    <div class="progress-item">
+                        <div class="progress-info">
+                            <span>HTML &amp; CSS</span><span>95%</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress" data-width="95%"></div></div>
+                    </div>
+                    <div class="progress-item">
+                        <div class="progress-info">
+                            <span>JavaScript</span><span>90%</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress" data-width="90%"></div></div>
+                    </div>
+                    <div class="progress-item">
+                        <div class="progress-info">
+                            <span>React.js</span><span>95%</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress" data-width="95%"></div></div>
+                    </div>
+                    <div class="progress-item">
+                        <div class="progress-info">
+                            <span>Node.js</span><span>80%</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress" data-width="80%"></div></div>
+                    </div>
+                    <div class="progress-item">
+                        <div class="progress-info">
+                            <span>Express</span><span>80%</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress" data-width="80%"></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects section" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">My work</span>
+                    <h2 class="section-title">My latest projects</h2>
+                </div>
+
+                <div class="filter-buttons">
+                    <button class="filter-btn active" type="button" data-filter="all">All</button>
+                    <button class="filter-btn" type="button" data-filter="web">Websites</button>
+                    <button class="filter-btn" type="button" data-filter="app">Applications</button>
+                    <button class="filter-btn" type="button" data-filter="design">Designs</button>
+                </div>
+
+                <div class="projects-grid" id="projectsGrid">
+                    <article class="project-card" data-category="web">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600" alt="E-commerce website" loading="lazy">
+                            <div class="project-overlay">
+                                <a href="#" aria-label="View project"><i class="fas fa-eye"></i></a>
+                                <a href="#" aria-label="Project GitHub"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-cat">Website</span>
+                            <h3>E-commerce platform</h3>
+                            <p>A complete online store with a shopping cart and a full control panel.</p>
+                            <div class="project-tags">
+                                <span>React</span><span>Node.js</span><span>MongoDB</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="app">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600" alt="Mobile task management application" loading="lazy">
+                            <div class="project-overlay">
+                                <a href="#" aria-label="View project"><i class="fas fa-eye"></i></a>
+                                <a href="#" aria-label="Project GitHub"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-cat">Application</span>
+                            <h3>Task management application</h3>
+                            <p>An app for managing daily tasks with smart alerts.</p>
+                            <div class="project-tags">
+                                <span>React Native</span><span>Firebase</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="design">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600" alt="Banking application interface design" loading="lazy">
+                            <div class="project-overlay">
+                                <a href="#" aria-label="View project"><i class="fas fa-eye"></i></a>
+                                <a href="#" aria-label="Project GitHub"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-cat">Design</span>
+                            <h3>Banking application design</h3>
+                            <p>A modern banking app interface designed in Figma.</p>
+                            <div class="project-tags">
+                                <span>Figma</span><span>UI/UX</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="web">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600" alt="Analytics dashboard" loading="lazy">
+                            <div class="project-overlay">
+                                <a href="#" aria-label="View project"><i class="fas fa-eye"></i></a>
+                                <a href="#" aria-label="Project GitHub"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-cat">Website</span>
+                            <h3>Analytics dashboard</h3>
+                            <p>A data analysis dashboard with custom interactive graphs.</p>
+                            <div class="project-tags">
+                                <span>React.js</span><span>Chart.js</span><span>Express</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="app">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600" alt="Online educational platform" loading="lazy">
+                            <div class="project-overlay">
+                                <a href="#" aria-label="View project"><i class="fas fa-eye"></i></a>
+                                <a href="#" aria-label="Project GitHub"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-cat">Application</span>
+                            <h3>Educational platform</h3>
+                            <p>An online course platform with payment and course tracking.</p>
+                            <div class="project-tags">
+                                <span>Next.js</span><span>Stripe</span><span>PostgreSQL</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="design">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1545235617-9465d2a55698?w=600" alt="Brand visual identity design" loading="lazy">
+                            <div class="project-overlay">
+                                <a href="#" aria-label="View project"><i class="fas fa-eye"></i></a>
+                                <a href="#" aria-label="Project GitHub"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-cat">Design</span>
+                            <h3>Visual identity for a brand</h3>
+                            <p>A visual identity designed for an emerging brand.</p>
+                            <div class="project-tags">
+                                <span>Illustrator</span><span>Photoshop</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Contact</span>
+                    <h2 class="section-title">Let's work together</h2>
+                </div>
+
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Do you have a project in mind that you want to execute perfectly?</h3>
+                        <p>Feel free to contact me. I will reply as soon as possible.</p>
+
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>adel.elhendawy2005@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+20 1211851969</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Egypt, Dakahlia</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Full name" aria-label="Full name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Email" aria-label="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="Subject" aria-label="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" rows="5" placeholder="Message..." aria-label="Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            Send a message <i class="fas fa-paper-plane"></i>
+                        </button>
+                        <p class="form-message" id="formMessage" role="status" aria-live="polite"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Adel<span>@</span></h3>
+                    <p>Professional Web Developer - Creating Exceptional Digital Experiences</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Adel ELhendawy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scrollTop" class="scroll-top" type="button" aria-label="Return to the top">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
